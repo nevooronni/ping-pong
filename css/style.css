@@ -3,7 +3,7 @@ h2 {
   color: #FFFFFF;
 }
 
-#input, #button2 {
+#enter, #button2 {
   height: 40px;
 }
 
@@ -12,7 +12,7 @@ h2 {
   margin-top: -5px;
 }
 
-#input {
+#enter {
   width: 320px;
   margin-left: 120px;
 }
