@@ -28,19 +28,53 @@
         <div id="position">
           <h2>Enter a number a a press get to play ping pong</h2>
           <form>
+            <input type="text" id="enter">
+            <button type="submit" class="btn btn-warning" id="button2">Go</button>
+          </form>
+          <!--<form>
             <input required id="enter" type="text">
             <button type="submit" class="btn btn-warning" id="button2">GET!</button>          
-          </form>
+          </form>-->
         </div>
         <div id="output">
-          <h1 id="heading"></h1>
-          <p id="append">this is the place</p>
-          <!--<button type="button" class="btn btn-default btn-lg btn-warning" id="button">RESET!</button>-->
+          <p id="append"></p>
         </div>
         <div id="mode">
-          <button type="button" class="btn btn-warning" id="rules">RULES</button>
-          <button type="button" class="btn btn-warning" id="about">ABOUT
-          </button>
+          <!--trigger modal with a button-->
+          <button type="button" class="btn btn-warning" id="rules" data-toggle="modal" data-target="#modal1">RULES</button>
+           <!-- Modal -->
+            <div id="modal1" class="modal" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content" id="modal">
+                  <button type="button" class="close" data-dismiss="modal fade" id="btnm">&times;</button>
+                  <h4 class="modal-titl" id="h4">RULES</h4>
+                  <p class="" id="p">Ping Pong will count up to your number starting from 1 with the following exceptions</p>
+                  <ol>
+                    <li>Numbers divisible by 3 become "ping"</li>
+                    <li>Numbers divisible by 5 become "pong"</li>
+                    <li>Numbers divisibel by 3 and 5 become "pingpong"</li>
+                  </ol>
+                </div>
+              </div>
+            </div>  
+          <button type="button" class="btn btn-warning" data-toggle="modal" data-target="modal2" id="about">ABOUT</button>
+           <!-- Modal -->
+            <div id="modal2" class="modal" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content" id="modal">
+                  <button type="button" class="close" data-dismiss="modal fade" id="btnm">&times;</button>
+                  <h4 class="modal-titl" id="h42">ABOUT</h4>
+                  <p class="" id="p2">created by: neville oronni</p>
+                  <p>git username/Url: <a href="">nevooronni</a></p>
+                  <p>powered by javasctipt</p>
+                </div>
+              </div>
+            </div>  
+          <button type="button" class="btn btn-warning" id="reset">RESET</button>
         </div>
         <P id="power">Game powered by jquery/javasctipt</P>
 

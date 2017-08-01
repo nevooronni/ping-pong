@@ -14,10 +14,17 @@ h2 {
   top: -200px;
   left: -120px;
   width: 1200px;
+  color: #FFFFFF;
 }
 
 #enter, #button2 {
   height: 40px;
+}
+
+#reset {
+  position: absolute;
+  top: 0px;
+  left: -77px
 }
 
 #button2 {
@@ -76,12 +83,17 @@ h2 {
 #mode {
   position: absolute;
   top: 500px;
-  left: 700px;
+  left: 730px;
 }
 
 #heading {
   position: absolute;
   left: 600px;
+}
+
+#modal {
+  background-color: #EEA338;
+  color: #FFFFFF;
 }
 
 
