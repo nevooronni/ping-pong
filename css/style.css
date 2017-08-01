@@ -1,6 +1,19 @@
 /*custom css*/
+body {
+  background-image: url("../img/images.jpg");
+  width: 1500px;
+}
+
 h2 {
   color: #FFFFFF;
+  margin-left: 72px;
+}
+
+#append {
+  position: absolute;
+  top: -200px;
+  left: -120px;
+  width: 1200px;
 }
 
 #enter, #button2 {
@@ -25,7 +38,7 @@ h2 {
 
 #simple {
   color: #FFFFFF;
-  margin-left: 530px;
+  margin-left: 375px;
 }
 
 #button {
@@ -36,13 +49,13 @@ h2 {
 
 #center {
   text-align: center;
-  margin-top: 270px;
+  margin-top: 70px;
   color: #FFFFFF;
 }
 
 #position {
   position: absolute;
-  top: 300px;
+  top: 250px;
   left: 380px;
 }
 
@@ -53,8 +66,27 @@ h2 {
   left: 500px;
 }
 
+#power {
+  position: absolute;
+  top: 600px;
+  left: 600px;
+  color: #FFFFFF;
+}
 
-.container-fluid {
+#mode {
+  position: absolute;
+  top: 500px;
+  left: 700px;
+}
+
+#heading {
+  position: absolute;
+  left: 600px;
+}
+
+
+.container {
   padding: 0;
   margin-bottom: 0;
+  width: 1200px;
 }

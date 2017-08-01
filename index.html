@@ -18,25 +18,32 @@
   </head>
 
   <body>
-    <div class="container-fluid">
+    <div class="container">
       <!--Jumbotron section-->
       <div class="jumbotron" id="image">
         <div id="disapear">
           <h1 id="center">PING PONG</h1>
           <p id="simple">Simple, Easy and Awesome to Play</p>
-          <button type="button" class="btn btn-default btn-lg btn-warning" id="button">GET STARTED</button>
         </div>
         <div id="position">
           <h2>Enter a number a a press get to play ping pong</h2>
           <form>
-            <input name="number" value="" type="text" id="enter">
-            <button type="submit" class="btn btn-warning" id="button2">GET</button>          
+            <input required id="enter" type="text">
+            <button type="submit" class="btn btn-warning" id="button2">GET!</button>          
           </form>
         </div>
         <div id="output">
-          <p id="append"></p>
+          <h1 id="heading"></h1>
+          <p id="append">this is the place</p>
+          <!--<button type="button" class="btn btn-default btn-lg btn-warning" id="button">RESET!</button>-->
         </div>
-      </div>
+        <div id="mode">
+          <button type="button" class="btn btn-warning" id="rules">RULES</button>
+          <button type="button" class="btn btn-warning" id="about">ABOUT
+          </button>
+        </div>
+        <P id="power">Game powered by jquery/javasctipt</P>
+
     </div>
 
     <!--custom js file-->
