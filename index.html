@@ -13,6 +13,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
     </script>
 
+    <!-- Latest compiled and minified JavaScript make sure to put jquery fast because the js is dependant on that-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script> 
+
     <!--custom stylesheet-->
     <link href="css/style.css" type="text/css" rel="stylesheet">
   </head>
@@ -36,20 +40,21 @@
             <button type="submit" class="btn btn-warning" id="button2">GET!</button>          
           </form>-->
         </div>
+        <!--sequence start-->
         <div id="output">
           <p id="append"></p>
         </div>
         <div id="mode">
           <!--trigger modal with a button-->
-          <button type="button" class="btn btn-warning" id="rules" data-toggle="modal" data-target="#modal1">RULES</button>
+          <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">RULES</button>
            <!-- Modal -->
-            <div id="modal1" class="modal" role="dialog">
+            <div id="myModal" class="modal fade" role="dialog">
               <div class="modal-dialog">
 
                 <!-- Modal content-->
                 <div class="modal-content" id="modal">
-                  <button type="button" class="close" data-dismiss="modal fade" id="btnm">&times;</button>
-                  <h4 class="modal-titl" id="h4">RULES</h4>
+                  <button type="button" class="close" data-dismiss="modal" id="btnm">&times;</button>
+                  <h4 class="modal-title" id="h4">RULES</h4>
                   <p class="" id="p">Ping Pong will count up to your number starting from 1 with the following exceptions</p>
                   <ol>
                     <li>Numbers divisible by 3 become "ping"</li>
@@ -59,21 +64,21 @@
                 </div>
               </div>
             </div>  
-          <button type="button" class="btn btn-warning" data-toggle="modal" data-target="modal2" id="about">ABOUT</button>
+          <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal2">ABOUT</button>
            <!-- Modal -->
-            <div id="modal2" class="modal" role="dialog">
+            <div id="myModal2" class="modal fade" role="dialog">
               <div class="modal-dialog">
 
                 <!-- Modal content-->
                 <div class="modal-content" id="modal">
-                  <button type="button" class="close" data-dismiss="modal fade" id="btnm">&times;</button>
-                  <h4 class="modal-titl" id="h42">ABOUT</h4>
-                  <p class="" id="p2">created by: neville oronni</p>
-                  <p>git username/Url: <a href="">nevooronni</a></p>
-                  <p>powered by javasctipt</p>
+                  <button type="button" class="close" data-dismiss="modal" id="btnm">&times;</button>
+                  <h4 class="modal-title" id="h4">ABOUT</h4>
+                  <p class="" id="p">created by: neville oronni</p>
+                  <p id="p">git username/Url: <a href="">nevooronni</a></p>
+                  <p id="p">powered by javasctipt</p>
                 </div>
               </div>
-            </div>  
+            </div> 
           <button type="button" class="btn btn-warning" id="reset">RESET</button>
         </div>
         <P id="power">Game powered by jquery/javasctipt</P>

@@ -9,12 +9,20 @@ h2 {
   margin-left: 72px;
 }
 
-#append {
-  position: absolute;
-  top: -200px;
-  left: -120px;
-  width: 1200px;
+li {
   color: #FFFFFF;
+}
+
+#append {
+  position: relative;
+  left: -330px;
+  width: 100%;
+  height: auto !important;
+  min-height: 100% !important;
+  word-wrap: break-word;
+  font-size: 15pt;
+  color: #FFFFFF;
+  text-align: center;
 }
 
 #enter, #button2 {
@@ -68,9 +76,12 @@ h2 {
 
 #output {
   position: absolute;
-  top: 600px;
+  top: 390px;
   color: #FFFFFF;
   left: 500px;
+  display: block;
+  height: auto !important;
+  min-height: 100% !important;
 }
 
 #power {
@@ -92,10 +103,26 @@ h2 {
 }
 
 #modal {
-  background-color: #EEA338;
-  color: #FFFFFF;
+  background-color: #EEA53D;
+  color: black;
+  height: 200px;
 }
 
+#btnm {
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+#h4 {
+  font-size: 40px;
+  text-align: center;
+}
+
+#p {
+  font-size: 15px;
+  text-align: center;
+  color: #FFFFFF;
+}
 
 .container {
   padding: 0;
